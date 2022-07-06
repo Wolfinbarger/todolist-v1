@@ -5,6 +5,8 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static("public"));
+
 const port = 3000;
 
 let items = ["Buy Food", "Cook Food", "Eat Food"];
